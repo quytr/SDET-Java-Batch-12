@@ -1,0 +1,58 @@
+Access Modifiers in Java:
+Access modifiers allow us to control the visibility of class members (fields, methods, constructors, etc) and
+classes itself in Java.
+There are 4 access levels and there are 3 keywords that we use to define these access level. Fourth level is applier
+when we don't use any access modifier keywords.
+
+Level from most restricted to less restricted are:
+1. private (keyword is also private)
+2. default (no keyword means default access level)
+3. protected (keyword is also protected)
+4. public (keyword is also public)
+
+Rules:
+1. We should always prefer private access modifier for the fields. Because fields contain the data and the methods of
+your class might use that data to perform some tasks. If we don't perform sanity checks before setting the values to
+these fields our classes and methods might misbehave. Also, the access of the data should be restricted so that not
+everyone can access the data.
+(note: A sanity check or sanity test is a basic test to quickly evaluate whether a claim or the result of a calculation
+can possibly be true. It is a simple check to see if the produced material is rational (that the material's creator
+was thinking rationally, applying sanity)).
+2. We can't use access modifiers with local variables.
+
+Constructors:
+Constructor in Java allow us to set the value of the fields of a class.
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object
+of a class is instantiated (created). It can be used to set initial values for object attributes.
+
+Rules:
+1. Constructor is not allowed any return type even void.
+2. Constructor name and class name must be the same.
+
+There are 2 types of constructor:
+1. No argument()
+Horse(){
+    write some important lines of code that you want to execute when the object of a class is created.
+    for example: you might want to fetch some info from internet or from your hard disk to give values to fields
+}
+The constructor that is provided automatically when we don't create any constructors in a class is called default
+constructors.
+
+Below is zero argument or no argument constructor
+Cow(){
+    you might want to execute some code to set up the resources from your class like opening the connections to database
+    checking it internet is available or not etc.
+}
+
+Interview:
+The difference between default and zero argument is whether we create it or not.
+If we don't create a constructor, Java will create a default constructor for us.
+
+2. Parameterized
+If any constructor contains list of variables in its signature (name plus parameters) is known as
+parameterized constructor.
+A parameterized constructor is one which takes some parameters.
+Parameterized constructor is used to provide different values to the distinct objects.
+
+If we have same local and instance variables, Java always prefer local variables if you want to instruct java to use
+instance variables, we use the "this" keyword

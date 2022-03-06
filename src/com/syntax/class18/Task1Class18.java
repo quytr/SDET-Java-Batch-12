@@ -1,6 +1,6 @@
 package com.syntax.class18;
 
-public class Task1 {
+public class Task1Class18 {
     /*
     Create a method that will accept an array as parameters and will return a sum of all elements from that array.
     Method should be visibly only within same package and accessible by the creating an instance of the class.
@@ -14,7 +14,7 @@ public class Task1 {
     }
 
     public static void main(String[] args) {
-        Task1 task = new Task1();
+        Task1Class18 task = new Task1Class18();
 
         int[] arr = {12,14,0,5,6,3};
         task.sumOfArray(arr);
