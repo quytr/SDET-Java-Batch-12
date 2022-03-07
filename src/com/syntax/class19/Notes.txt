@@ -56,3 +56,8 @@ Parameterized constructor is used to provide different values to the distinct ob
 
 If we have same local and instance variables, Java always prefer local variables if you want to instruct java to use
 instance variables, we use the "this" keyword
+
+Constructor can't be STATIC- BECAUSE WE ARE ASSIGNING DIFFERENT VALUES EACH TIME- USING STATIC WE CAN ONLY STORE ONE
+VALUE IN THE VARIABLE
+Constructor can't be static because all the object would be same values for the variables - what's the point of
+constructor if all values aare the same( there is no point )
