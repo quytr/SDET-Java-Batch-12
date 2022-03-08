@@ -21,12 +21,21 @@ Your program will print out "true" if it's a palindrome and "false" if not.
      */
 
     boolean isPalindrome(String str){
-        return reverseString(str).equalsIgnoreCase(str);
+        if(str.equalsIgnoreCase(reverseString(str))){
+            return true;
+        }else{
+            return false;
+        }
+//        return reverseString(str).equalsIgnoreCase(str);
     }
 
     String reverseString(String str){
-        return new StringBuilder(str).reverse().toString();
-    }
+        StringBuilder stringBuilder = new StringBuilder(str);
+        stringBuilder = stringBuilder.reverse();
+        return stringBuilder.toString();
+
+//        return new StringBuilder(str).reverse().toString();
+ }
 
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
@@ -34,7 +43,9 @@ Your program will print out "true" if it's a palindrome and "false" if not.
         String givenString = inp.nextLine();
 
         StringManipulations099 obj = new StringManipulations099();
-        System.out.println(obj.isPalindrome(givenString.replaceAll(" ", "")));
+        givenString = givenString.replaceAll(" ", "");
+        System.out.println(obj.isPalindrome(givenString));
+//        System.out.println(obj.isPalindrome(givenString.replaceAll(" ", "")));
 
 
     }

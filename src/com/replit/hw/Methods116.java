@@ -8,6 +8,7 @@ public class Methods116 {
      */
 
     boolean isEven(int num1, int num2){
+
         return num1%2==0 && num2%2==0;
     }
 
