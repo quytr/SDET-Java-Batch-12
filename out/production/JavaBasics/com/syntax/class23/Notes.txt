@@ -45,3 +45,6 @@ Method overriding: *interview*
     overloading
     polymorphism
 
+interviewer: “what is polymorphism?”
+me: “what i remember is we can have cars
+ from different factories in the same program”
