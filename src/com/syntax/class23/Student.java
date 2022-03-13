@@ -43,14 +43,20 @@ class SchoolStudent extends Student {
 }
 class Main {
     public static void main(String[] args) {
-        new SchoolStudent().activity();
-        new SchoolStudent().study();
+        //in Java we can store the object of a child classes in a parent type variable.
+        // Every class in Java can be treated as data type;
 
-        new CollegeStudent().activity();
-        new CollegeStudent().subject();
-
-        new SyntaxStudent().activity();
-        new SyntaxStudent().rest();
+        /*
+        As we can store the object of a child class in a parent class, we can also create an array of
+        these studetns as show below
+         */
+        Student[] students = {new SyntaxStudent(), new SchoolStudent(), new CollegeStudent()};
+        for(Student student : students){
+            //calling the methods from all the children classes
+            student.activity();
+            student.subject();
+        }
+        students[0].activity();
 
     }
 }
