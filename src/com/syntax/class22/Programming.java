@@ -12,7 +12,7 @@ public class Programming {
         System.out.println("I love " + str);
     }
 
-    static  void print(){
+    static void print(){
         System.out.println("I love programming languages");
     }
 
