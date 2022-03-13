@@ -1,0 +1,47 @@
+//if else conditions
+//loops
+//methods
+// constructor and this keyword
+//Access modifier
+//types of variables
+
+Method overloading in Java:
+    When same method name exists in a class but with different number of parameters or different date type of parameters or
+different sequence of parameters.
+
+Advantages of method overloading:
+    Flexibility of having same name methods in a class.
+    End user gets the benefit that he does not need to remember different method names.
+
+Rules:
+    We can overload the constructors.
+    We can overload the static methods as well.
+    We can overload the main method as well.
+
+Rules for static methods:
+    Static methods can't access instance fields directly.
+    Instance methods can't access instance as well as static fields directly.
+
+    (instant variable has different values, when using static method, it will not know which value to call)
+
+    1) private (keyword is also private) - access only the file in which it is created
+    2) default (no keyword means default) - everyone can see it; default gives access to everything in the same package
+    3) protected (keyword is also protected) - gives access within the package and if it's access through a
+    subclass by doing "extends" the original
+    4) public (keyword is also public) -everyone can see it; public gives access even outside the package
+
+
+Method overriding: *interview*
+    1. Method overriding happens when we have same name methods in the parent class and in the child class.
+    2. We can only override a method if we have inheritance relationship between 2 classes.
+    3. We can't override the private methods because they don't participate in inheritance.
+    4. We can't override the constructors because they don't participate in inheritance.
+    (to create a constructor, you have the use the same name of the class)
+
+    *Interview*
+    super keyword
+    inheritance
+    overriding
+    overloading
+    polymorphism
+
