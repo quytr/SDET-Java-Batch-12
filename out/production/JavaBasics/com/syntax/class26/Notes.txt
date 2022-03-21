@@ -21,3 +21,8 @@ Encapsulation:
     We create classes and inside those classes we create private fields and methods. These methods are call getter setter
     methods, and we set and get the values of the class fields with the help of these methods instead of accessing and
     modifying them directly.
+
+
+Eclipse vs Intellij
+workspace  vs project
+project vs module
