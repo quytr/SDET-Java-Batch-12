@@ -1,0 +1,50 @@
+Wrapper classes:
+    They are object types for all the primitive types. When we use the wrapper classes, we get all the benefits of classes
+and objects for example we can have methods.
+Also, generics works with only classes.
+Generic is a concept of Java that helps us...
+
+*Interview* Difference between array vs ArrayList
+
+Boxing in wrapper classes: (candy in a wrapper)
+    boxing happens when we convert a primitive to corresponding wrapper type.
+    int num = 10;
+    Integer num2 = new Integer(num)  //boxing
+
+    unboxing happens when we convert a wrapper object to a corresponding primitive type
+    Integer num2 = new Integer(10);
+    int num = num2.intValue();
+
+    Integer num = 10;  //autoBoxing
+    int num2 = num;   //autoBoxing
+
+List (it is an interface in frame which is implemented by two classes
+
+ArrayList vs LinkedList
+Similar:
+1. We can store the duplicate values in lists,
+2. Insertion order is maintained.
+(the order in which you are adding elements to the data structure)
+When to use ArrayList:
+1. If most of the operations are reading and storing new data and not shifting or changing the position of data then we
+should go with array list.
+ex: houses, building, house number,...
+
+When to use LinkedList:
+When most of the operations are related to changing the position of data or related to data shifting, then we should go
+with LinkedList
+ex: tennis ranking, scoreboard,...
+
+What is dynamic?
+
+
+If we are using any operation that can change the size of array, DO NOT use the for loop
+
+When you are doing any operations on the lists that can change its size, using Iterator otherwise you can use loops.
+
+Set:
+    Sets do not allow duplicate value and no insertion order
+
+
+
+
