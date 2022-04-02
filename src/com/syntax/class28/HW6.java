@@ -9,17 +9,14 @@ public class HW6 {
     Display name of each student.
      */
     public static void main(String[] args) {
-        Students students1 = new Students("Kevin", "KA12354");
-        Students students2 = new Students("Tracy", "TP95452");
-        Students students3 = new Students("Jun", "JT34234");
+        HashSet<Students> students = new HashSet<>();
+        students.add(new Students("Kevin", "KA12354"));
+        students.add(new Students("Tracy", "TP95452"));
+        students.add(new Students("Jun", "JT34234"));
 
-        HashSet<String> students = new HashSet<>();
-        students.add(students1.studentInfo());
-        students.add(students2.studentInfo());
-        students.add(students3.studentInfo());
 
-        for(String student : students){
-            System.out.println(student);
+        for(Students student : students){
+            student.studentInfo();
         }
 
     }
@@ -32,7 +29,16 @@ class Students{
         this.studentName = studentName;
         this.studentID = studentID;
     }
-    public String studentInfo(){
-        return (studentName + " " + studentID);
+    public void studentInfo(){
+
+        System.out.println(studentName);
+    }
+
+    @Override
+    public String toString() {
+        return "Students{" +
+                "studentName='" + studentName + '\'' +
+                ", studentID='" + studentID + '\'' +
+                '}';
     }
 }

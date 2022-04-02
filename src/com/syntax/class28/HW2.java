@@ -2,6 +2,7 @@ package com.syntax.class28;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class HW2 {
     /*
@@ -11,32 +12,16 @@ public class HW2 {
      */
     public static void main(String[] args) {
 
-        Card1 card1 = new Card1("Capital One");
-        Card2 card2 = new Card2("Discovery");
-        Card3 card3 = new Card3("Bank of America");
+        LinkedList<Card> cards = new LinkedList<>();
+        cards.add(new Card1("Capital One"));
+        cards.add(new Card2("Discovery"));
+        cards.add(new Card3("Bank of America"));
 
-        ArrayList<String> cards = new ArrayList<>();
-        cards.add(card1.activateCard());
-        cards.add(card1.creditCardType());
-        cards.add(card2.activateCard());
-        cards.add(card2.creditCardType());
-        cards.add(card3.activateCard());
-        cards.add(card3.creditCardType());
-
-        for (int i = 0; i < cards.size(); i++) {
-            System.out.println(cards.get(i));
+        for (Card card : cards) {
+            card.creditCardType();
         }
 
-        for(String card: cards){
-            System.out.println(card);
-        }
-
-        Iterator<String> iterator = cards.iterator();
-        while(iterator.hasNext()){
-            System.out.println(iterator.next());
-        }
     }
-
 }
 abstract class Card{
     String cardType;
@@ -44,10 +29,11 @@ abstract class Card{
     public Card(String cardType) {
         this.cardType = cardType;
     }
-    public String activateCard(){
-        return "Activating " + cardType + " card";
+    public void activateCard(){
+
+        System.out.println("Activating " + cardType + " card");
     }
-    public abstract String creditCardType();
+    public abstract void creditCardType();
 }
 class Card1 extends Card{
 
@@ -56,8 +42,9 @@ class Card1 extends Card{
     }
 
     @Override
-    public String creditCardType() {
-        return "Credit-building cards";
+    public void creditCardType() {
+
+        System.out.println("Credit-building cards");
     }
 }
 
@@ -68,8 +55,9 @@ class Card2 extends Card{
     }
 
     @Override
-    public String creditCardType() {
-        return "Rewards credit cards";
+    public void creditCardType() {
+
+        System.out.println("Rewards credit cards");
     }
 }
 
@@ -80,7 +68,8 @@ class Card3 extends Card{
     }
 
     @Override
-    public String creditCardType() {
-        return "Low interest and balance transfer card";
+    public void creditCardType() {
+
+        System.out.println("Low interest and balance transfer card");
     }
 }

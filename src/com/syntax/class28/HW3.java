@@ -2,6 +2,7 @@ package com.syntax.class28;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 public class HW3 {
@@ -23,7 +24,9 @@ aList.add("James");
         aList.add("Jasmine");
         aList.add("Jane");
         aList.add("James");
-        HashSet<String> bList = new HashSet<>(aList);
-        System.out.println(bList);
+        LinkedHashSet bList = new LinkedHashSet<>(aList);
+        aList.clear();
+        aList.addAll(bList);
+        System.out.println(aList);
     }
 }

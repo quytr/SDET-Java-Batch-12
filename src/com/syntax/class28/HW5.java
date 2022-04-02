@@ -18,13 +18,16 @@ public class HW5 {
         cities.add("Reston");
         cities.add("Aurora");
 
-        Iterator<String> iterator = cities.iterator();
-        while(iterator.hasNext()){
-            if(iterator.next().startsWith("A")){
-                iterator.remove();
-            }
-        }
+        //lambda
+        cities.removeIf(s -> s.startsWith("A"));
         System.out.println(cities);
+
+//        Iterator<String > iterator =  cities.iterator();
+//        while (iterator.hasNext()) {
+//            if(iterator.next().startsWith("A")){
+//                iterator.remove();
+//            }
+//        }
 
 
     }
