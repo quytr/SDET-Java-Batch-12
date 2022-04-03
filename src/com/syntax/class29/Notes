@@ -27,8 +27,7 @@ I care about insertion order but I don't care about retrieval speed which Set sh
 If I want to have sorted data all the time?
 - TreeSet
 
-==========================================================================
-Maps in Java:
+
 
 
 
