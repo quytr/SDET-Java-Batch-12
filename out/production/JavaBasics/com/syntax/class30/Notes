@@ -1,0 +1,42 @@
+Maps in Java:
+    Map is an interface that allows us to store the data in key value pairs.
+Benefits:
+    1. We can store 2 values inside the maps.
+    2. Searching is very efficient in maps.
+Types of maps:
+    1. HashMap
+    2. LinkedHashMap
+    3. TreeMap
+HashMap:
+    1. Insertion order is not maintained (downside).
+    2. Insertion and retrieval is fastest (upside).
+LinkedHashMap:
+    1. Insertion order is maintained (upside).
+    2. Insertion speed is same as HashMap byt retrieval speed is the slowest in all the maps.
+TreeMap:
+    1. Data is sorted in natural order by default.
+    2. Insertion speed is slowest byt retrieval speed is better than LinkedHashMap but slower than HashMap.
+Rules:
+    1. It does not belongs to collection framework.
+    2. We can't convert a collection to a map. For example, we can't convert a set to a Map.
+    3. Duplicate keys are not allowed in maps.
+    If we have duplicate key, then its values are overwritten, last value is retained.
+    4. Duplicate values are allowed.
+
+Map<String, String> students = new Map <>();
+students.put("Ya123", "Yazgul");
+Set<String> set = new HashSet(students)
+
+To extract the key from a Map, we use getSet(). getSet() return Set.
+To extract a value, we use values(). value() is only available in collection, value() return Collection
+
+
+Map<Integer, String> buildings = new HashMap<>();
+    the limitation of this, that you cannot call the method from HashMap from Map.
+
+Difference between Set,List and Map in Java?
+• Set, List and Map are 3 important interface of Java collection framework.
+ o List provides ordered and indexed collection which may contain duplication .
+ o Set provides un-ordered collection of unique objects. Set doesn’t allowed duplication . List and Set are both extend
+collection interface.
+ o Map provides a data structure based on Key Value. Key is always unique, value can be dupl.
