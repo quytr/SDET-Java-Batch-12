@@ -28,4 +28,50 @@ Polymorphism:
     Polymorphism happens when an object behaves different. For example a method behave differently when we pass different
     parameters or when we call the method using different objects.
 
+final keyword in Java:
+    final keyword is non access modifier that can help restrict some features of OOPS
+    When we use it the class name, no other class can inherit from that class.
+    When we use it method name, we can't override those methods inside the child classes.
+    When we use it fields, we can't change their values.
+Rules:
+    1. We can't use final and abstract together.
+    2. Static and final can be used together.
+
+Abstraction:
+    is a process through which we hid the implementation details and show only the functionality to the user.
+For example, if we have method that calculates the tax of salaries person, the person who wants to calculate his tax
+don't need to understand all the details.
+Benefits:
+    1. Clean code
+    2. Less complexity
+    3. Improve the maintainability of code.
+
+We can achieve abstraction in Java using Abstract classes and interfaces:
+A class declared with abstract keyword is called abstract class.
+Rules:
+    1. As soon as we have a method abstract that class must also be abstract.
+    2. Abstract methods don't have bodies inside the classes in which they are defined.
+    3. A method can't be static and abstract at the same time.
+    4. Fields can't be abstract.
+    5. Methods can't be private and abstract.
+    6. Abstract keyword not allowed with constructors.
+    7. We can have concrete (main class) and abstract methods in an abstract class.
+
+Interfaces in Java:
+    are contracts that define how a method should be called and classes provide the implementation for those methods.
+    Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+Rules:
+    1. All the variable in an interface they are always public static and final
+    2. No instance fields and therefore no constructors.
+    3. Methods in interfaces are always public abstract by default.
+    4. With interfaces we use the implements keyword.
+    5. We can have multiple inheritance in interfaces.
+    6. We can have static methods in interfaces.
+    7. Interfaces can extend other interfaces.
+
+
+
 private access modifier is not participate in inheritance.
+
+
+instanceof https://www.javatpoint.com/downcasting-with-instanceof-operator
