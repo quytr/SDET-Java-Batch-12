@@ -25,7 +25,8 @@ TreeMap:
 HashTable:
     Is a thread safe data means it can handle multiple insertions and retrievals at the same time from multiple
     CPU cores byt because of thread safety feature it is also very slow so if you are sure that you will never
-    write multiple thread
+    write multithreading code never use it.
+
 
 
 
