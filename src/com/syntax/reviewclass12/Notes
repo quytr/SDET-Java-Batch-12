@@ -1,0 +1,61 @@
+Encapsulation in Java:
+    Encapsulation is hiding the class variable by making them private and providing the getter setter methods.
+Benefits:
+    Better control over the data and security.
+Collections Framework:
+    Collection Framework is a collection of interfaces and classes which have many methods to store and manipulate
+    the data.
+String name;
+String name1;
+String name2;
+String[] names = new String[0];
+Limitations of the arrays:
+    1. They are fixed in size once we have created an array, we can't modify its size.
+    2. No built-in methods.
+Collections:
+    1. Dynamic in size.
+    2. They have built-in methods to manipulate the data.
+    3. Collections framework does not work with the primitive data types. We have to use the wrapper classes.
+    4. When we convert the primitive data type to non-primitive, we call it boxing.
+Boxing:
+int num = 10;
+Integer wrapper = new Integer(num); //boxing
+Integer wrapper = num;  //autoBoxing
+
+Double d = new Double(23.4);
+double num2 = d.doubleValue();  //un-boxing
+double num3 = d;  //auto un-boxing
+
+
+why do we need to override equal method?
+    equals method when we override it , we can check for the equality of two objects based on the fields of that class
+    instead of addresses.
+    (because the equals method compares the obj addresses instead of the name, and we want to specify our class name
+    not address of object)
+
+Why do we need to override toString methods?
+    By default, toString method from the object class is used to print out an Object but it only prints the address
+    of objects. If we want to printout the actual fields of a class, we override the toString method.
+
+    In Java, when we make a class inherit from another class, we are already doing multiple inheritance because Object
+    class is automatically inherited for all the classes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
