@@ -1,0 +1,6 @@
+Exceptions in Java:
+    Exception in Java is an unwanted behavior that disrupts the normal flow of execution.
+
+*Interview*
+Have you ever encounter null pointer exception in your job?
+we get the null pointer exception when a method is called on an object which is no initialized
