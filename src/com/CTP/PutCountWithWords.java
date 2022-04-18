@@ -45,20 +45,18 @@ output [switch, tv]
         for (Map.Entry<String, Integer> entry : counts.entrySet()) {
 //            System.out.println(entry);
 //            newList.add(entry.getKey());
-            if (entry.getValue() > 1) {
-                newList.add(entry.getKey());
-            } else {
-                newList.add(entry.getKey());
+
+            for (int i = 0; i < entry.getValue(); i++) {
+                if (entry.getValue() > 1) {
+                    if(i==0){
+                        newList.add(entry.getKey());
+                    }else{
+                        newList.add(entry.getKey() + i);
+                    }
+                } else {
+                    newList.add(entry.getKey());
+                }
             }
-
-
-//            for (int i = 1; i <= entry.getValue(); i++) {
-//                if (entry.getValue() > 1) {
-//                    newList.add(entry.getKey() + i);
-//                } else {
-//                    newList.add(entry.getKey());
-//                }
-//            }
         }
         return newList;
     }

@@ -13,7 +13,8 @@ public class MapDemo3 {
         fruitMap.put("Orange",16.5);
         fruitMap.put("Mango",20.0);
 
-        Collection<Double> values = fruitMap.values();  //value() is only available in collection only, value() return Collection
+        //value() is only available in collection only, value() return Collection
+        Collection<Double> values = fruitMap.values();
         System.out.println(values);
 
         Iterator<Double> iterator = values.iterator();

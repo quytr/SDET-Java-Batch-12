@@ -8,7 +8,7 @@ public class ExceptionDemo2 {
         try{
 //            System.out.println(10/0);
             String name = null;
-//            name.length();
+            name.length();
 //            int[] arr = new int[-5];
 //            String[] strArr = new String[2];
 //            strArr[5] = "Issues";
