@@ -1,0 +1,76 @@
+Lists should be used when we have to store single elements as a collection.
+    1. To maintain the insertion order.
+    2. They allow us to store duplicate elements.
+    3. They are dynamic in size. (not fixed size).
+    4. Data is stored based on indexes like arrays.
+Two famous classes that implement the List interface are:
+    1. ArrayList
+    2. LinkedList
+ArrayList
+    1. When most of the operations (70 - 90%) are storing new data at the end of the list and reading data no
+    manipulation (adding or removing the data) of data, then we should go with the ArrayList.
+LinkedList
+    When most of the operations (70 - 90%) are storing new data in-between or at the start of the List, then we
+    should go with LinkedList.
+In real life. 90% of times ArrayList is used.
+
+listIterator() only available in List;
+
+Sets
+    Sets also store single values but they don't allow duplicate.
+    1. HashSet      2. LinkedHashSet        3. TreeSet
+HashSet (90% of the time it is used in real life)
+    1. It does not maintain the insertion order.
+    2. Fastest when it comes to insertion and retrieval speed.
+LinkedHashSet
+    1. Maintain the insertion order.
+    2. Insertion is slower than HashSet but faster than TreeSet.
+    3. Retrieval is slowest.
+TreeSet
+    1. Sorts the data in natural order.
+    2. Insertion is slowest.
+    3. Faster than LinkedHashSet but it's slower than HashSet.
+Map
+    1. Map is data structure that can store that data in the form of key value pairs. We can use any real life info
+    as key for example SSN, phoneNumber.
+    2. Searching in Maps is super super fast.
+1. HashMap      2. LinkedHashMap        3. TreeMap      4. HashMap
+HashMap
+    Fastest most widely used but does not maintain the insertion order.
+LinkedHashMap
+    1. Maintains the insertion order.
+    2. Slower than HashMap but faster than TreeMap
+    3. Slowest of all four.
+TreeMap
+    1. Data is stored in sorted form.
+    2. Insertion is slowest.
+    3. Better than LinkedHashMap but slower than HashMap
+FileHandling in Java:
+    Reading and writing data to files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
